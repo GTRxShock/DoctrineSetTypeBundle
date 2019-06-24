@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "symfony/symfony": "~3.0|~4.1",
+        "symfony/symfony": "~4.1",
         "doctrine/orm": "~2.4"
     },
     "require-dev": {
