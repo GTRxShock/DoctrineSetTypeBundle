@@ -35,15 +35,15 @@ abstract class AbstractSetType extends Type
             return null;
         }
 
-        $diff = array_diff($value, $this->getValues());
-        if (count($diff) > 0) {
-            throw new \InvalidArgumentException(sprintf(
-                    'Invalid value "%s". It is not defined in "%s::$choices"',
-                    implode(',', $diff),
-                    get_class($this)
-                )
-            );
-        }
+        // $diff = array_diff($value, $this->getValues());
+        // if (count($diff) > 0) {
+        //    throw new \InvalidArgumentException(sprintf(
+        //             'Invalid value "%s". It is not defined in "%s::$choices"',
+        //             implode(',', $diff),
+        //             get_class($this)
+        //        )
+        //    );
+        // }
 
         return implode(',', $value);
     }
